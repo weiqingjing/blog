@@ -132,3 +132,29 @@ tail -5 readme.md
 grep 'hello' readme.md
 ```
 
+
+
+### 软链接
+
+建立软链接，原链接，目标链接，软链接可以是文件夹，也可以是文件
+
+```
+ln -s /usr/local/Cellar/openresty/1.15.8.2/nginx/sbin/nginx ~/app/link/nginx
+```
+
+
+
+查看软链接
+
+```
+ls -l
+```
+
+
+
+删除软链接，注意，删除软链接最后带/会把源文件也一并删除
+
+```
+rm -rf ~/app/link/nginx
+```
+
